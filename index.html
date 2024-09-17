@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourneypedia</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="icons/logo_head.ico" type="image/x-icon"/>
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Tourneypedia">
+    <meta property="og:description" content="Discover the Best Tourneys for your Squad">
+    <meta property="og:image" content="logo_head.png">
+    <meta property="og:url" content="https://tourneypedia.in/">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-wrapper">
+            <div class="logo-container">
+                <a href="/"> <img id="header-logo" src="./images/My first design.png" alt="TourneyPedia"></a>
+            </div>
+            <nav>
+                <input class="hidden" type="checkbox" id="menuToggle">
+                <label class="menu-btn" for="menuToggle">
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                    <div class="menu"></div>
+                </label>
+                <div class="nav-container">
+                    <ul class="nav-tabs">
+                        <li class="nav-tab no-link-style" id="home-tab">Home</li>
+                        <li class="nav-tab" id="submit-tourney-tab">Submit a Tournament</li>
+                        <li class="nav-tab no-link-style" id="contact-tab">Contact</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="center">
+        <p class="main-text">Discover the Best Tourneys <br> for your Squad</p>
+    </div>
+
+    <!--<div class="container">-->
+    <!--    <div class="slider">-->
+    <!--        <p class="tab">BGMI</p>-->
+    <!--        <div class="line"></div>-->
+    <!--        <div class="sub-tabs">-->
+    <!--            <p class="sub-tab active" id="tournaments-tab">Tournaments</p>-->
+    <!--            <p class="sub-tab" id="scrims-tab">Scrims</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+
+        <!-- Tournament Cards Container -->
+    <!--    <div class="tournament">-->
+            
+    <!--    </div>-->
+    <!--</div>-->
+    
+    <div class="container">
+    <div class="slider">
+        <div class="tabs">
+            <p class="tab active" id="bgmi-tab">BGMI</p>
+            <p class="tab" id="freefire-tab">FREE FIRE</p>
+        </div>
+        
+        <div class="sub-tabs">
+            <div id="bgmi-subtabs">
+                <p class="sub-tab active" id="bgmi-tournaments-tab">Tournaments</p>
+                <p class="sub-tab" id="bgmi-scrims-tab">Scrims</p>
+            </div>
+            <div id="freefire-subtabs">
+                <p class="sub-tab active" id="freefire-tournaments-tab">Tournaments</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tournament"></div>
+
+</div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-sections">
+                <div class="footer-column">
+                    <img id="header-logo" src="./images/My first design.png" alt="TourneyPedia">
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/submit_tourney.html">Submit a Tournament</a></li>
+                        <li><a href="/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <ul class="social-links">
+                        <li><a href="https://www.instagram.com/tourneypedia.in/" target="_blank"><img src="icons/instagram_icon.png" alt="Instagram"></a></li>
+                        <li><a href="https://www.linkedin.com/company/tourneypedia" target="_blank"><img src="icons/linkedin_icon.svg" alt="LinkedIn"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tourneypedia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Files -->
+    <script src="js/fetch_data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

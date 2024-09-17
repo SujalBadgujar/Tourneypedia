@@ -1,0 +1,121 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+html,
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  background: #000;
+  /*color: #fff;*/
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.nav-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 98%;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  padding: 0 2px;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-logo {
+    max-width: 30%;
+}
+@media only screen and (max-width: 768px) {
+    #header-logo {
+        max-width: 60%;
+    }
+}
+
+.nav-tabs {
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+}
+.no-link-style {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; 
+}
+
+.nav-tab:not(:last-child) {
+  padding: 10px 25px;
+  margin: 0;
+  border-right: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.nav-tab:last-child {
+  padding: 10px 0 0 25px;
+}
+
+.nav-tab,
+.menu-btn {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.form-container {
+  background: #000;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 500px;
+}
+.form-container h2 {
+    color:#fff;
+}
+
+form label {
+  color: #fff;
+  margin-top: 10px;
+}
+
+form input[type="text"],
+form input[type="url"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 5px 0 20px 0;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.contact {
+    margin:10%;
+    color:#fff;
+}

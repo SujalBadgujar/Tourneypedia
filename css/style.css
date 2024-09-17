@@ -1,0 +1,355 @@
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+html,
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  background: #000;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #fff;
+}
+
+.center {
+  text-align: center;
+}
+
+.nav-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 98%;
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+  padding: 0 2px;
+  z-index: 2;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-logo {
+  margin-left: 10px;
+  max-width: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+  #header-logo {
+    max-width: 60%;
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  font-weight: 600;
+  font-size: 18px;
+  list-style: none;
+}
+
+.no-link-style {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-tab:not(:last-child) {
+  padding: 10px 25px;
+  margin: 0;
+  border-right: 1px solid #eee;
+  white-space: nowrap;
+}
+
+.nav-tab:last-child {
+  padding: 10px 0 0 25px;
+}
+
+.nav-tab,
+.menu-btn {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .nav-container {
+    position: fixed;
+    display: none;
+    overflow-y: auto;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 280px;
+    height: 100%;
+    background: #fff;
+    box-shadow: -1px 0 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 80px;
+    width: 100%;
+  }
+
+  .nav-tab:not(:last-child) {
+    padding: 20px 25px;
+    margin: 0;
+    border-right: unset;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  .nav-tab:last-child {
+    padding: 15px 25px;
+  }
+
+  .menu-btn {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .menu-btn .menu {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 2px;
+    background: #111;
+  }
+
+  .menu-btn .menu:nth-child(2) {
+    margin-top: 4px;
+    opacity: 1;
+  }
+
+  .menu-btn .menu:nth-child(3) {
+    margin-top: 4px;
+  }
+
+  #menuToggle:checked + .menu-btn .menu {
+    transition: transform 0.2s ease;
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(1) {
+    transform: translate3d(0, 6px, 0) rotate(45deg);
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(2) {
+    transform: rotate(-45deg) translate3d(-5.71429px, -6px, 0);
+    opacity: 0;
+  }
+
+  #menuToggle:checked + .menu-btn .menu:nth-child(3) {
+    transform: translate3d(0, -6px, 0) rotate(-45deg);
+  }
+
+  #menuToggle:checked ~ .nav-container {
+    z-index: 1;
+    display: flex;
+    animation: menu-slide-left 0.3s ease;
+  }
+  
+  @keyframes menu-slide-left {
+    0% {
+      transform: translateX(200px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+}
+
+/* middle text part  */
+.main-text {
+  margin-top: 100px;
+  font-size: 60px;
+  font-weight: 500;
+  color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-text {
+    font-size: 40px;
+    font-weight: 400;
+  }
+}
+
+/* Slider */
+.tabs {
+    display: flex;
+    justify-content: center;
+    position: relative; /* Added */
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.slider .tab {
+  font-family: 'Bungee';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+}
+
+.tab {
+    cursor: pointer;
+    margin: 0 10px;
+     font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+    user-select: none;
+    position: relative; /* Added */
+    transition: border-color 0.3s;
+
+}
+.tab.active {
+    border-bottom: 2px solid #fff; /* or your desired color */
+}
+
+
+
+/* CARDS */
+.tournament {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  font-size: 17px;
+  width: 310px;
+  height: 350px;
+  float: left;
+  background: #edf3f7;
+  margin: 10px;
+  border-radius: 8px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.thumbnail {
+    border-radius:5px;
+    height:118px;
+    width:118px;
+}
+.visit {
+    display:inline-block;
+    text-decoration:none;
+  border: 2px solid #0074D9;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /*background-color: #0074D9;*/
+  padding: 7px 20px;
+  font-size: 17px;
+  /*cursor: pointer;*/
+  /*color: #fff;*/
+  --clr-font-main: hsla(0 0% 20% / 100);
+  --btn-bg-1: hsla(194 100% 69% / 1);
+  --btn-bg-2: hsla(217 100% 56% / 1);
+  --btn-bg-color: hsla(360 100% 100% / 1);
+  --radii: 0.5em;
+  cursor: pointer;
+  transition: 0.8s;
+  background-size: 280% auto;
+  background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+  border: none;
+  color: var(--btn-bg-color);
+  box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+}
+
+.visit:hover {
+  background-position: right top;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .visit {
+    transition: linear;
+  }
+}
+
+.card-text {
+  margin: 5px;
+}
+
+.card p {
+margin-top:5px;
+margin-bottom:5px;
+}
+
+.card h2 {
+    margin-bottom:15px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 20px gray;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    font-size: 16px; /* Reduce card text size */
+    width: 290px;    /* Reduce card width */
+    height: 300px;   /* Reduce card height */
+  }
+  .card h2 {
+      margin-bottom:10px;
+      font-size:20px;
+  }
+
+  .visit {
+    font-size: 16px; /* Reduce visit button text size */
+  }
+}
+
+/* Add styles for sub-tabs */
+.sub-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+        color: white;
+}
+
+.sub-tab {
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    font-family: 'Bungee';
+  /*font-weight: 400;*/
+  /*font-size: 20px;*/
+}
+
+.sub-tab.active {
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    border-radius: 0px;
+}
+
+
+
