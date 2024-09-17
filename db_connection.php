@@ -2,9 +2,9 @@
 
 // Database connection parameters
 $servername = "localhost"; // Hostname (e.g., localhost)
-$username = "u711499391_sujal"; // Database username
-$password = "Sujal@tourneypedia7"; // Database password
-$database = "u711499391_tourneypedia"; // Database name
+$username = ""; // Database username
+$password = ""; // Database password
+$database = ""; // Database name
 
 // Attempt to establish a connection
 $conn = new mysqli($servername, $username, $password, $database);
